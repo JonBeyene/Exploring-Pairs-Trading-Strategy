@@ -1,2 +1,6 @@
 # Exploring-Pairs-Trading-Strategy
-Exploring the ideas behind the Pairs Trading Strategy
+The Pair Trading strategy is a type of statistical arbitrage strategy that relies on buying and selling two highly cointegrated financial assets simultaneously. When a price difference develops between these two financial assets, known as a spread, the idea is to buy the weaker asset and short the stronger one. 
+
+In this project, we will explore the idea of the Pair Trading strategy and determine if two stocks, Visa (V) and Mastercard (MA), are cointegrated in a given time period. Proving cointegration is essential for this strategy to work as cointegration leads to the conclusion that the spread of these two stocks will eventually revert to the mean.
+
+To check for cointegration, we will use linear regression on the adjusted closing price for both stocks and use this to calculate the residual, which is the difference between the observed value and the value from the regression line. We will utilize the Augmented Dickey-Fuller Test, which checks if a time series is a stationary process. The confirmation of stationarity means that the time series will be mean reverting and that a Pair Trading strategy can be implemented between these two stocks in the given time frame. 
